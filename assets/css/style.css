@@ -247,89 +247,36 @@ footer {
   outline: 0.2rem dotted var(--tomato);
 }
 
-/* Estilos para la casilla de verificación */
-.checkbox {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  padding-left: 2.5rem;
+/* Estilos para las etiquetas del formulario de suscripción */
+.privacy {
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: var(--white);
-  margin-top: 1rem; /* Separación hacia arriba */
-  margin-bottom: 1rem; /* Separación hacia abajo */
 }
 
-/* Estilos para el marcador de la casilla de verificación */
-.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+.emailmessage {
+  padding-bottom: 3rem;
 }
 
-/* Estilos para el marcador personalizado */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem; /* Tamaño más grande */
-  width: 3rem; /* Tamaño más grande */
-  background-color: var(--white);
-  border-radius: 50%; /* Redondeado */
+.error-message {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size:12px;
 }
 
-/* Estilos para el marcador cuando está marcado */
-.checkbox input:checked ~ .checkmark {
-  background-color: var(--dark-slate-grey);
-}
-
-/* Estilos para el indicador dentro del marcador */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Estilos para el indicador cuando está marcado */
-.checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Estilos para el indicador en forma de marca de verificación */
-.checkbox .checkmark:after {
-  left: 0.6rem;
-  top: 0.3rem;
-  width: 0.5rem;
-  height: 1rem;
-  border: solid var(--white);
-  border-width: 0 0.2rem 0.2rem 0;
-  transform: rotate(45deg);
-}
-
-
-/* Estilos para la pantalla de privacidad */
 .privacy-card {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
 }
 
-/* Estilos para el título en la pantalla de privacidad */
-.privacy-card h2 {
-  font-size: 4rem;
-}
 
-/* Estilos para el texto en la pantalla de privacidad */
-.privacy-card p {
-  line-height: 1.5;
-}
 
-/* Estilos para el botón en la pantalla de privacidad */
-.privacy-card .btn {
-  margin-top: auto;
-}
 

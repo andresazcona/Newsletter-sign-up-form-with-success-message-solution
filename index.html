@@ -36,24 +36,24 @@
           <li>And much more!</li>
         </ul>
 
-        <!-- Formulario de suscripción -->
-        <form class="sign-up-form">
-          <!-- Etiqueta del campo de correo electrónico -->
-          <label for="email">Email address</label>
-          <!-- Campo de entrada para el correo electrónico -->
-          <input id="email" type="email" placeholder="email@company.com" />
-          <!-- Mensaje de error si el correo electrónico no es válido -->
-          <span class="error-message">Valid email needed</span>
-          <!-- Checkbox de privacidad -->
-          <label for="privacy">
-            <input id="checkbox" type="checkbox" /> <!-- Cambiado el id a "checkbox" -->
-            I agree to the privacy policy
-          </label>
-          <!-- Botón para enviar el formulario -->
-          <button class="btn submit-btn">Subscribe to monthly newsletter</button>          
-        </form>
-      </div>
-    </div>
+            <!-- Formulario de suscripción -->
+            <form class="sign-up-form">
+              <!-- Etiqueta del campo de correo electrónico -->
+              <label class="emailmessage" for="email">Email address</label>
+              <!-- Mensaje de error si el correo electrónico no es válido -->
+              <label class="error-message"><strong>¡Valid email needed!</strong> as well it must include 2 numbers and start with capital letters</label>
+              <!-- Campo de entrada para el correo electrónico -->
+              <input id="email" type="email" placeholder="email@company.com" />
+              <!-- Checkbox de privacidad -->
+              <label class="privacy" for="privacy">
+                <input id="checkbox" type="checkbox" /> <!-- Cambiado el id a "checkbox" -->
+                I agree to the privacy policy
+              </label>
+              <!-- Botón para enviar el formulario -->
+              <button class="btn submit-btn">Subscribe to monthly newsletter</button>          
+            </form>
+          </div>
+        </div>
 
     <!-- Contenedor del mensaje de éxito (oculto inicialmente) -->
     <div class="card success-card hidden">
@@ -74,12 +74,14 @@
 
     <!-- Contenedor del mensaje de error (oculto inicialmente) -->
     <div class="card privacy-card hidden">
+
+      <img src="assets/images/dinosaur-orange.svg" alt="" />
       <!-- Encabezado del mensaje de error -->
       <h2>Ups!</h2>
       <!-- Mensaje de error -->
       <p>You didn't accept the privacy policy.</p>
       <!-- Botón para cerrar el mensaje de error -->
-      <button class="btn dismiss-btn">Dismiss message</button>
+      <button class="btn dismiss-btn">Back to main screen</button>
     </div>
   </main>
 
