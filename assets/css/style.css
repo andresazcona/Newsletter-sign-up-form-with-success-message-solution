@@ -255,6 +255,7 @@ footer {
 
 .emailmessage {
   padding-bottom: 3rem;
+  font-size: 20px;
 }
 
 .error-message {
@@ -275,6 +276,14 @@ footer {
   
   
   
+}
+
+/* Estilos para la imagen del dinosaurio en la tarjeta de privacidad */
+.privacy-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding-bottom: -1rem;
 }
 
 
