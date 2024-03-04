@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Definición de metadatos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Enlace al favicon de la página -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <!-- Título de la página -->
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Enlaces a hojas de estilo CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/queries.css" />
+</head>
+<body>
+  <main>
+    <!-- Encabezado oculto -->
+    <h1 class="hidden">Newsletter Sign-up Form</h1>
+
+    <!-- Contenedor del formulario de suscripción -->
+    <div class="card sign-up-card">
+      <!-- Imagen ilustrativa del formulario para dispositivos móviles -->
+      <img class="sign-up-img" src="assets/images/illustration-sign-up-mobile.svg" alt="" />
+      
+      <!-- Texto descriptivo del formulario -->
+      <div class="sign-up-text">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="sign-up-list">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <!-- Formulario de suscripción -->
+        <form class="sign-up-form">
+          <!-- Etiqueta del campo de correo electrónico -->
+          <label for="email">Email address</label>
+          <!-- Campo de entrada para el correo electrónico -->
+          <input id="email" type="email" placeholder="email@company.com" />
+          <!-- Mensaje de error si el correo electrónico no es válido -->
+          <span class="error-message">Valid email needed</span>
+          <!-- Checkbox de privacidad -->
+          <label for="privacy">
+            <input id="checkbox" type="checkbox" /> <!-- Cambiado el id a "checkbox" -->
+            I agree to the privacy policy
+          </label>
+          <!-- Botón para enviar el formulario -->
+          <button class="btn submit-btn">Subscribe to monthly newsletter</button>          
+        </form>
+      </div>
+    </div>
+
+    <!-- Contenedor del mensaje de éxito (oculto inicialmente) -->
+    <div class="card success-card hidden">
+      <!-- Icono de éxito -->
+      <img src="assets/images/icon-success.svg" alt="" />
+      <!-- Encabezado del mensaje de éxito -->
+      <h2>Thanks for subscribing!</h2>
+      <!-- Mensaje de confirmación de suscripción -->
+      <p>
+        A confirmation email has been sent to 
+        <!-- Dirección de correo electrónico proporcionada -->
+        <span class="submitted-email">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <!-- Botón para cerrar el mensaje de éxito -->
+      <button class="btn dismiss-btn">Dismiss message</button>
+    </div>
+
+    <!-- Contenedor del mensaje de error (oculto inicialmente) -->
+    <div class="card privacy-card hidden">
+      <!-- Encabezado del mensaje de error -->
+      <h2>Ups!</h2>
+      <!-- Mensaje de error -->
+      <p>You didn't accept the privacy policy.</p>
+      <!-- Botón para cerrar el mensaje de error -->
+      <button class="btn dismiss-btn">Dismiss message</button>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="flex-center">
+    <!-- Atribución al desafío proporcionado por Frontend Mentor -->
+    <span class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></span>
+    <!-- Símbolo decorativo -->
+    <span class="boxv">&boxv;</span>
+    <!-- Atribución del codificador -->
+    <span class="attribution">Coded by <a>Andres Azcona</a>.</span>
+  </footer>
+
+  <!-- Enlace al script JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

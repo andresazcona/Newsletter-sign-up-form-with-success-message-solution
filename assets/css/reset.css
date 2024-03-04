@@ -1,0 +1,79 @@
+/* Reset.css Establece los valores predeterminados para los elementos de formulario */
+
+
+/* Establece el modelo de caja como box-sizing: border-box para todos los elementos y sus pseudo-elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Resetea los márgenes de los elementos de bloque comunes */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Elimina los estilos de lista predeterminados */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Aplica scroll suave cuando se enfoca el documento */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Establece la altura mínima del cuerpo al 100% de la altura del viewport y otros ajustes de estilo */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; /* Establece la altura de línea a 1.5 */
+}
+
+/* Aplica estilos para evitar que los enlaces subrayados se superpongan */
+a:not([class]) {
+  text-decoration-skip-ink: auto; /* Evita que los enlaces subrayados se superpongan */
+}
+
+/* Ajusta el ancho máximo de las imágenes para que no excedan su contenedor */
+img,
+picture {
+  max-width: 100%;
+  display: block; /* Elimina el espacio adicional debajo de las imágenes */
+}
+
+/* Hereda la fuente en los elementos de formulario */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Media query que reduce la animación y la transición en caso de preferencia de reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within { 
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

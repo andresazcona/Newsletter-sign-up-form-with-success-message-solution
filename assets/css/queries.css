@@ -1,0 +1,69 @@
+/*estilos para el diseño responsivo de la página mediante media queries */
+
+/* Media query que aplica estilos cuando el ancho de la pantalla es igual o mayor a 30em */
+@media only screen and (min-width: 30em) {
+  .card {
+    border-radius: 0 0 3rem 3rem; /* Aplica un borde redondeado solo en la parte inferior de la tarjeta */
+    min-height: fit-content; /* Ajusta la altura mínima de la tarjeta al contenido */
+  }
+}
+
+/* Media query para pantallas con un ancho igual o mayor a 70em */
+@media only screen and (min-width: 70em) {
+  main {
+    min-height: calc(100vh - 5rem); /* Establece la altura mínima del elemento principal en el 100% del viewport menos 5rem */
+
+    display: grid; /* Utiliza un sistema de rejilla */
+    place-content: center; /* Centra el contenido vertical y horizontalmente */
+  }
+
+  .card {
+    border-radius: 3rem; /* Aplica un borde redondeado en todas las esquinas de la tarjeta */
+  }
+
+  h2 {
+    font-size: 5.6rem; /* Establece el tamaño de fuente para los elementos h2 */
+  }
+
+  .sign-up-card {
+    max-width: 100rem; /* Establece el ancho máximo de la tarjeta de suscripción */
+    padding: 3rem; /* Añade relleno interno a la tarjeta */
+
+    display: grid; /* Utiliza un sistema de rejilla */
+    grid-template-columns: 4fr 3fr; /* Divide la tarjeta en dos columnas */
+  }
+
+  .sign-up-img {
+    grid-column: -1 / -2; /* Posiciona la imagen de la tarjeta al final de la primera columna */
+    content: url(../images/illustration-sign-up-desktop.svg); /* Define la imagen de fondo de la tarjeta */
+  }
+
+  .sign-up-text {
+    grid-row: 1; /* Establece la fila en la que se encuentra el texto */
+    padding: 0 6.5rem; /* Añade relleno interno al texto */
+
+    justify-content: center; /* Centra verticalmente el contenido */
+    gap: 2.5rem; /* Establece el espacio entre los elementos secundarios */
+  }
+
+  .success-card {
+    max-width: 55rem; /* Establece el ancho máximo de la tarjeta de éxito */
+    padding: 7rem 9rem; /* Añade relleno interno a la tarjeta de éxito */
+
+    gap: 4rem; /* Establece el espacio entre los elementos secundarios */
+  }
+}
+
+/* Media query para pantallas con un ancho máximo de 23em */
+@media (max-width: 23em) {
+  footer {
+    flex-direction: column; /* Cambia la dirección de los elementos secundarios del pie de página a columna */
+    gap: 0.5rem; /* Establece el espacio entre los elementos secundarios */
+  }
+
+  .boxv {
+    display: none; /* Oculta el elemento con la clase "boxv" */
+  }
+}
+
+
