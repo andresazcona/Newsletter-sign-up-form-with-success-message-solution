@@ -23,11 +23,7 @@ function toggleCards() {
 
 // Función para verificar un correo electrónico
 function validateEmail(email) { 
-  return String(email)
-    .toLowerCase()
-    .match( // Expresión regular para verificar el correo electrónico
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
+  return /^[A-Z][a-zA-Z0-9]*[0-9]{2}[a-zA-Z0-9]*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/.test(email);
 }
 
 // Función para enviar el correo electrónico
